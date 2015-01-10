@@ -5,6 +5,7 @@ from .forms import PieceForm
 
 def home(request):
 
+
     form = PieceForm(request.POST or None)
 
     if form.is_valid():
@@ -15,3 +16,9 @@ def home(request):
     return render_to_response("kk.html",
                                 locals(),
                                 context_instance=RequestContext(request))
+
+def homex(request):
+	context = {}
+	template = "homex.html"
+
+    return render(request, template, context)
