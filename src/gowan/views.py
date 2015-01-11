@@ -17,8 +17,8 @@ def home(request):
                                 locals(),
                                 context_instance=RequestContext(request))
 
-def homex(request):
-	context = {}
-	template = "homex.html"
+# def homex(request):
+# 	context = {}
+# 	template = "homex.html"
 
-    return render(request, template, context)
+#     return render(request, template, context)

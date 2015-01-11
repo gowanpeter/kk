@@ -8,49 +8,50 @@
 	"buffers":
 	[
 		{
-			"contents": "from django.conf.urls import patterns, include, url\nfrom django.conf import settings\nfrom django.conf.urls.static import static\n\nfrom django.contrib import admin\nadmin.autodiscover()\n\nurlpatterns = patterns('',\n    # Examples:\n    url(r'^$', 'gowan.views.home', name='home'),\n    url(r'^homex$', 'gowan.views.homex', name='homex'),\n    # url(r'^blog/', include('blog.urls')),\n\n    url(r'^admin/', include(admin.site.urls)),\n\n    #src/kk\n #   url(r'^gowan/', include('gowan.urls', namespace='gowan', app_name='kk')),\n #   url(r'^$',gowan.views.kk_directory, name='kk')\n)\n\nif settings.DEBUG:\n    urlpatterns += static(settings.STATIC_URL,\n                          document_root=settings.STATIC_ROOT)\n    urlpatterns += static(settings.MEDIA_URL,\n                          document_root=settings.MEDIA_ROOT)",
-			"file": "src/kk/urls.py",
-			"file_size": 749,
-			"file_write_time": 130653268598994048,
+			"file": "src/gowan/models.py",
 			"settings":
 			{
-				"buffer_size": 805,
+				"buffer_size": 6790,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/gowan/views.py",
+			"file": "src/gowan/admin.py",
 			"settings":
 			{
-				"buffer_size": 548,
+				"buffer_size": 2472,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<!-- #homex.html\n -->",
-			"file": "static/templates/#homex.html",
-			"file_size": 12,
-			"file_write_time": 130653272134954193,
-			"settings":
-			{
-				"buffer_size": 21,
-				"line_ending": "Unix",
-				"name": "#homex.html"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 0.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"advan",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
 		],
-		"width": 0.0
+		"width": 449.0
 	},
 	"console":
 	{
-		"height": 0.0,
+		"height": 202.0,
 		"history":
 		[
 		]
@@ -66,10 +67,24 @@
 	},
 	"file_history":
 	[
+		"/home/peter/.virtualenvs/envkk/lib/python3.4/site-packages/django/db/models/fields/related.py",
+		"/home/peter/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/peter/Able/src/kk/urls.py",
+		"/home/peter/Able/src/gowan/views.py",
+		"/home/peter/Able/src/gowan/admin",
+		"/home/peter/Able/src/gowan/models.py",
+		"/home/peter/Able/src/gowan/m1odels.py",
+		"/home/peter/Able/src/gowan/a1dmin.py",
+		"/home/peter/Able/kk.sublime-project",
+		"/home/peter/Able/src/gowan/admin.py",
+		"/home/peter/Able/src/gowan/mmodels.py",
+		"/home/peter/Able/src/gowan/mmmodels.py",
+		"/home/peter/Able/static/templates/#homex.html",
+		"/home/peter/Able/src/gowan/models.py~"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 42.0
 	},
 	"find_in_files":
 	{
@@ -83,6 +98,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"object has no attribute",
+			"through"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -100,29 +117,60 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/kk/urls.py",
+					"file": "src/gowan/models.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 805,
+						"buffer_size": 6790,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								328,
-								328
+								6630,
+								6630
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage"
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3887.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/gowan/admin.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2472,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2313,
+								2313
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -132,52 +180,26 @@
 				},
 				{
 					"buffer": 1,
-					"file": "src/gowan/views.py",
+					"file": "src/gowan/admin.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 548,
+						"buffer_size": 2472,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								547,
-								547
+								81,
+								81
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 115.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "static/templates/#homex.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 21,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								17,
-								17
-							]
-						],
-						"settings":
-						{
-							"auto_name": "#homex.html",
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -190,11 +212,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 34.0
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 42.0
 	},
 	"layout":
 	{
@@ -222,7 +244,7 @@
 	"project": "kk.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -251,6 +273,10 @@
 	},
 	"settings":
 	{
+		"xdebug":
+		{
+			"hide_conflict": false
+		}
 	},
 	"show_minimap": true,
 	"show_open_files": false,
