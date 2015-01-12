@@ -28,15 +28,17 @@ class Piece(models.Model):
 	def __str__(self):
 		return self.piece_name
 
+
+conditions = (
+	('a', 'Pristine' ),
+	('b', 'Used, good'),
+	('c', 'Used, worn'),
+	('d', 'Cracked / chipped'),
+	('e', 'Broken'),
+	)
 #choice
 class ConditionChoice(models.Model):
-	conditions = (
-		('a', 'Pristine' ),
-		('b', 'Used, good'),
-		('c', 'Used, worn'),
-		('d', 'Cracked / chipped'),
-		('e', 'Broken'),
-		)
+
 	name = models.CharField(max_length=60)
 	condition = models.CharField(max_length=1, choices=conditions)
 

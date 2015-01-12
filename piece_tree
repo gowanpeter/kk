@@ -1,0 +1,40 @@
+url(r'^$', 'gowan.views.home', name='home'),
+
+VIEWS.PY
+
+def home(request):
+
+    form = PieceForm(request.POST or None)
+
+    if form.is_valid():
+        save_it = form.save(commit=False)
+        save_it.save()
+
+    return render_to_response("kk.html",
+                                locals(),
+                                context_instance=RequestContext(request))
+                                
+FORMS.PY   
+
+class PieceForm(forms.ModelForm):
+    class Meta:
+        model = Piece
+
+TEMPLATES
+
+<!doctype html>
+
+    <html lang="en">
+        <head>
+    <title>Main Form</title>
+        </head>
+        <body>
+            <h1>Ceramics eh?</h1>
+                <form method='POST' action=''> {% csrf_token %}
+                    {{form.as_p}}
+                    <input type='submit'>
+                </form>
+        </body>
+    </html>
+
+                           

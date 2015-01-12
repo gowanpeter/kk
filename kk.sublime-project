@@ -4,43 +4,10 @@
 		{
 			"follow_symlinks": true,
 			"path": "/home/peter/Able"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/home/peter/AAcs_code"
 		}
 	]
-
 }
-// {
-    // All options in here can also be specified in your project settings
-    // with a prepended "sublimegdb_". You probably want to
-    // have something like this in your project settings:
-    //
-    // "settings":
-    // {
-    //      "sublimegdb_workingdir": "${folder:${project_path:your_executable_name}}",
-    //      // NOTE: You MUST provide --interpreter=mi for the plugin to work
-    //      "sublimegdb_commandline": "gdb --interpreter=mi ./your_executable_name"
-    //      ]
-    // }
-/*     {
- "sublimegdb_commandline": "gdb -nx -readnow -fullname --interpreter=mi -args ./test1.exe",
- "sublimegdb_workingdir": "${folder:${project_path:bin/test1.exe}}"
- }
-*/    //
-    // ${home}, ${project_path:} and ${folder:} tokens can be used in the workingdir option.
-    //
-    // ${home} is replaced with the value of the HOME environment variable.
-    //
-    // ${project_path:} tries to find a file with the given name in all the registered project folders and
-    // returns the first file found, or the original file name if none is found.
-    // Example: ${project_path:main.cpp} tries to find a file named "main.cpp" relative
-    // to the current project's folders. If none is found, it is replaced with "main.cpp".
-    //
-    // ${folder:} is replaced with the dirname of the given path.
-    // Example: ${folder:/path/to/file} is replaced with "/path/to".
-    // "workingdir": "${folder:${project_path:tool}}",
-
-    // NOTE: You MUST provide --interpreter=mi for the plugin to work
-    // "commandline": "gdb --interpreter=mi ./tool"
-// }
-/*Replace all the “/test1.exe” with “/YOU_EXE_NAME_HERE.exe”
-In your build statements make sure that you pass the compiler the ‘-g’ flag (you basically need the executable to have explicit something or other for GDB to work…. Google it….)
-Reference the Github repo for all the shortcuts, but basically its F9 to toggle a breakpoint and F5 to start debugging.*/
