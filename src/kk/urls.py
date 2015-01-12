@@ -4,7 +4,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 admin.autodiscover()
-from gowan.views import GlazeView
+
 
 urlpatterns = patterns('',
     # Examples:
@@ -13,6 +13,15 @@ urlpatterns = patterns('',
     url(r'^documentation$', 'gowan.views.DocumentationView', name='documentation',),
      url(r'^condition$', 'gowan.views.ConditionChoiceView', name='condition',),
      url(r'^exhibition$', 'gowan.views.ExhibitionView', name='exhibition',),
+     url(r'^hline$', 'gowan.views.HeathLineLookupView', name='hline',),
+     url(r'^logo$', 'gowan.views.LogoView', name='logo',),
+     url(r'^maker$', 'gowan.views.MakerLookupView', name='maker',),
+     url(r'^material$', 'gowan.views.MaterialLookupView', name='material',),
+     url(r'^method$', 'gowan.views.MethodLookupView', name='method',),
+     url(r'^pub$', 'gowan.views.PublicationView', name='pub',),
+     url(r'^setc$', 'gowan.views.SetCollectionView', name='set',),
+
+
 
     # url(r'^blog/', include('blog.urls')),
 

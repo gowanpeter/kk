@@ -1,5 +1,5 @@
 from django import forms
-from .models import Piece, GlazeLookup, Documentation, ConditionChoice, Exhibition
+from .models import Piece, GlazeLookup, Documentation, ConditionChoice, Exhibition, HeathLineLookup, Logo, MakerLookup, MaterialLookup, MethodLookup, Publication, SetCollection
 from django.forms import ModelForm
 
 
@@ -39,3 +39,50 @@ class ConditionChoiceForm(forms.ModelForm):
     class Meta:
       model = ConditionChoice
       fields = "__all__"
+
+
+class HeathLineLookupForm(forms.ModelForm):
+  class Meta:
+    model = HeathLineLookup
+    fields = "__all__"
+
+
+class LogoForm(forms.ModelForm):
+  class Meta:
+    model = Logo
+    fields = "__all__"
+
+
+class MakerLookupForm(forms.ModelForm):
+  class Meta:
+    model = MakerLookup
+    fields = "__all__"
+
+
+class MaterialLookupForm(forms.ModelForm):
+  class Meta:
+    model = MaterialLookup
+    fields = "__all__"
+
+
+class MethodLookupForm(forms.ModelForm):
+  class Meta:
+    model = MethodLookup
+    fields = "__all__"
+
+
+class PublicationForm(forms.ModelForm):
+  class Meta:
+    model = Publication
+    fields = "__all__"
+
+
+class SetCollectionForm(forms.ModelForm):
+  class Meta:
+    model = SetCollection
+    fields = "__all__"
+
+
+
+
+
