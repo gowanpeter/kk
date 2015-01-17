@@ -1,5 +1,5 @@
 from django import forms
-from gowan.models import Piece, GlazeLookup, Documentation, ConditionChoice, Exhibition, HeathLineLookup, Logo, MakerLookup, MaterialLookup, MethodLookup, Publication, SetCollection
+from gowan.models import Piece, GlazeLookup, Dimension, Documentation, ConditionChoice, Exhibition, HeathLineLookup, Logo, MakerLookup, MaterialLookup, MethodLookup, Publication, SetCollection
 from django.forms import ModelForm
 from django.forms.models import inlineformset_factory
 
@@ -27,6 +27,12 @@ class GlazeLookupForm(forms.ModelForm):
 
 # many to many
 # Create the form class
+
+
+class DimensionForm(forms.ModelForm):
+    class Meta:
+        model = Dimension
+        fields = "__all__"
 
 
 class DocumentationForm(forms.ModelForm):

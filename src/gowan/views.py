@@ -31,6 +31,18 @@ def GlazeView(request):
                               context_instance=RequestContext(request))
 
 
+def DimensionView(request):
+    form = DimensionForm(request.POST or None)
+
+    if form.is_valid():
+        save_it = form.save(commit=False)
+        save_it.save()
+
+    return render_to_response("kk.html",
+                              locals(),
+                              context_instance=RequestContext(request))
+
+
 def DocumentationView(request):
 
     form = DocumentationForm(request.POST or None)

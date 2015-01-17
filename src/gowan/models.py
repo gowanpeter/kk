@@ -10,14 +10,7 @@ class Piece(models.Model):
     piece_name = models.CharField(max_length=45, blank=True)
     piece_description = models.CharField(max_length=2000, blank=True)
     manufactured_date = models.DateField(blank=True, null=True)
-    length_inches = models.IntegerField(blank=True, null=True)
-    width_inches = models.IntegerField(blank=True, null=True)
-    height_inches = models.IntegerField(blank=True, null=True)
-    weight_ounces = models.IntegerField(blank=True, null=True)
-    length_mm = models.IntegerField(blank=True, null=True)
-    width_mm = models.IntegerField(blank=True, null=True)
-    height_mm = models.IntegerField(blank=True, null=True)
-    weight_grams = models.IntegerField(blank=True, null=True)
+
     cataloguer = models.CharField(max_length=45, blank=True)
     catalogue_date = models.DateField(blank=True, null=True)
     condition = models.IntegerField(blank=True, null=True)
@@ -49,6 +42,20 @@ class ConditionChoice(models.Model):
     def __str__(self):
         return self.name
 
+class Dimensions(models.Model):
+    dim_piece = models.OneToOneField(Piece, primary_key=True)
+    length_inches = models.IntegerField(blank=True, null=True)
+    width_inches = models.IntegerField(blank=True, null=True)
+    height_inches = models.IntegerField(blank=True, null=True)
+    weight_ounces = models.IntegerField(blank=True, null=True)
+    length_mm = models.IntegerField(blank=True, null=True)
+    width_mm = models.IntegerField(blank=True, null=True)
+    height_mm = models.IntegerField(blank=True, null=True)
+    weight_grams = models.IntegerField(blank=True, null=True)
+
+
+        def __str__(self):
+        return self.name
 # many to many
 
 
