@@ -1,4 +1,13 @@
 {
+	"build_systems":
+	[
+		{
+			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+			"name": "Anaconda Python Builder",
+			"selector": "source.python",
+			"shell_cmd": "python -u \"$file\""
+		}
+	],
 	"folders":
 	[
 		{
@@ -8,6 +17,14 @@
 		{
 			"follow_symlinks": true,
 			"path": "/home/peter/AAcs_code"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "src"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "static"
 		}
 	]
 }

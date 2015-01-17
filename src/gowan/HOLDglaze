@@ -1,0 +1,25 @@
+def GlazeView(request):
+
+    form = GlazeLookupForm(request.POST or None)
+
+    if form.is_valid():
+        save_it = form.save(commit=False)
+        save_it.save()
+
+    return render_to_response("kk.html",
+                              locals(),
+                              context_instance=RequestContext(request))
+
+
+class GlazeLookupForm(forms.ModelForm):
+
+        class Meta:
+            model = GlazeLookup
+            fields = "__all__"
+
+    # form to add a glaze
+#form = GlazeLookupForm(ModelForm)
+
+# form to change an existing glaze
+#glaze = GlazeLookup.objects.get(pk=1)
+#form = GlazeLookupForm(instance=glaze)

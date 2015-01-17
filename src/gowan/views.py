@@ -1,5 +1,9 @@
 from django.shortcuts import render, render_to_response, RequestContext
-from gowan.forms import PieceForm, GlazeLookupForm, DocumentationForm, ConditionChoiceForm, ExhibitionForm, HeathLineLookupForm, LogoForm, MakerLookupForm, MaterialLookupForm, MethodLookupForm, PublicationForm, SetCollectionForm
+from django.http import HttpResponseRedirect
+from gowan.forms import PieceForm, GlazeLookupForm, DocumentationForm,\
+ConditionChoiceForm, ExhibitionForm, HeathLineLookupForm, LogoForm,MakerLookupForm,\
+MaterialLookupForm, MethodLookupForm, PublicationForm, SetCollectionForm
+
 
 def home(request):
 
@@ -10,8 +14,8 @@ def home(request):
         save_it.save()
 
     return render_to_response("kk.html",
-                                locals(),
-                                context_instance=RequestContext(request))
+                              locals(),
+                              context_instance=RequestContext(request))
 
 
 def GlazeView(request):
@@ -22,10 +26,10 @@ def GlazeView(request):
         save_it = form.save(commit=False)
         save_it.save()
 
-
     return render_to_response("kk.html",
-                                locals(),
-                                context_instance=RequestContext(request))
+                              locals(),
+                              context_instance=RequestContext(request))
+
 
 def DocumentationView(request):
 
@@ -35,10 +39,10 @@ def DocumentationView(request):
         save_it = form.save(commit=False)
         save_it.save()
 
-
     return render_to_response("kk.html",
-                                locals(),
-                                context_instance=RequestContext(request))
+                              locals(),
+                              context_instance=RequestContext(request))
+
 
 def ConditionChoiceView(request):
 
@@ -48,10 +52,9 @@ def ConditionChoiceView(request):
         save_it = form.save(commit=False)
         save_it.save()
 
-
     return render_to_response("kk.html",
-                                locals(),
-                                context_instance=RequestContext(request))
+                              locals(),
+                              context_instance=RequestContext(request))
 
 
 def ExhibitionView(request):
@@ -62,10 +65,9 @@ def ExhibitionView(request):
         save_it = form.save(commit=False)
         save_it.save()
 
-
     return render_to_response("kk.html",
-                                locals(),
-                                context_instance=RequestContext(request))
+                              locals(),
+                              context_instance=RequestContext(request))
 
 
 def HeathLineLookupView(request):
@@ -76,11 +78,9 @@ def HeathLineLookupView(request):
         save_it = form.save(commit=False)
         save_it.save()
 
-
     return render_to_response("kk.html",
-                                locals(),
-                                context_instance=RequestContext(request))
-
+                              locals(),
+                              context_instance=RequestContext(request))
 
 
 def LogoView(request):
@@ -91,11 +91,10 @@ def LogoView(request):
         save_it = form.save(commit=False)
         save_it.save()
 
-
-
     return render_to_response("kk.html",
-                                locals(),
-                                context_instance=RequestContext(request))
+                              locals(),
+                              context_instance=RequestContext(request))
+
 
 def MakerLookupView(request):
 
@@ -105,11 +104,9 @@ def MakerLookupView(request):
         save_it = form.save(commit=False)
         save_it.save()
 
-
-
     return render_to_response("kk.html",
-                                locals(),
-                                context_instance=RequestContext(request))
+                              locals(),
+                              context_instance=RequestContext(request))
 
 
 def MaterialLookupView(request):
@@ -120,11 +117,9 @@ def MaterialLookupView(request):
         save_it = form.save(commit=False)
         save_it.save()
 
-
-
     return render_to_response("kk.html",
-                                locals(),
-                                context_instance=RequestContext(request))
+                              locals(),
+                              context_instance=RequestContext(request))
 
 
 def MethodLookupView(request):
@@ -135,11 +130,9 @@ def MethodLookupView(request):
         save_it = form.save(commit=False)
         save_it.save()
 
-
-
     return render_to_response("kk.html",
-                                locals(),
-                                context_instance=RequestContext(request))
+                              locals(),
+                              context_instance=RequestContext(request))
 
 
 def PublicationView(request):
@@ -150,11 +143,9 @@ def PublicationView(request):
         save_it = form.save(commit=False)
         save_it.save()
 
-
-
     return render_to_response("kk.html",
-                                locals(),
-                                context_instance=RequestContext(request))
+                              locals(),
+                              context_instance=RequestContext(request))
 
 
 def SetCollectionView(request):
@@ -165,11 +156,35 @@ def SetCollectionView(request):
         save_it = form.save(commit=False)
         save_it.save()
 
-
-
     return render_to_response("kk.html",
-                                locals(),
-                                context_instance=RequestContext(request))
+                              locals(),
+                              context_instance=RequestContext(request))
+
+from django.shortcuts import render, render_to_response, RequestContext
+from django.http import HttpResponseRedirect
+from django.core.urlresolvers import reverse
+from  models import Exhibition, Piece
+from  forms import UserSubmittedExhibitionForm, PieceFormSet
+
+
+def Submit_exhibitView(request):
+    if request.POST:
+
+        form = UserSubmittedExhibitForm(request.POST)
+        if form.is_valid():
+            exhibition = form.save(commit=False)
+            piece_formset = PieceFormSet(request.POST, instance=exhibit)
+            if piece_formset.is_valid():
+                exhibit.save()
+                piece_formset.save()
+                return HttpResponseRedirect(reverse('exhibitions_submit_posted'))
+        else:
+          form = UserSubmittedExibitionForm()
+          piece_formset = PieceFormSet(instance=Exhibition())
+    return render_to_response("exhibitions/submit.html", {
+        "form": form,
+        "piece_formset": piece_formset,
+    }, context_instance=RequestContext(request))
 
 
 

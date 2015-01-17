@@ -1,0 +1,1 @@
+set up a public-facing form for a recipes app, I ran into the issue of combining Django's ModelForm (for the Recipe model) with an inline for the foreign key Ingredients. Coming from a PHP background, I was thinking about manually creating

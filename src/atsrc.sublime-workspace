@@ -7,6 +7,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "gowan/through_fields_models.py",
+			"settings":
+			{
+				"buffer_size": 7739,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -69,8 +77,37 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "gowan/through_fields_models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7739,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],

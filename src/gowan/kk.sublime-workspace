@@ -1,0 +1,295 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Gla",
+				"GlazeLookupForm"
+			],
+			[
+				"G",
+				"GlazeLookup"
+			],
+			[
+				"mo",
+				"ModelForm"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Python 3/Python3.sublime-build",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"",
+				"Python: Enable Pep8 Linting On View"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"istall",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Satisfy Dependencies"
+			],
+			[
+				"package d",
+				"Package Control: Discover Packages"
+			],
+			[
+				"list",
+				"Preferences: SublimeGDB Settings – User"
+			],
+			[
+				"su",
+				"Preferences: SublimeGDB Settings – Default"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"advan",
+				"Package Control: Advanced Install Package"
+			]
+		],
+		"width": 579.0
+	},
+	"console":
+	{
+		"height": 202.0,
+		"history":
+		[
+			"print (sys.path)",
+			"print(sys.pythonpath)",
+			"print(pythonpath)",
+			"print(pythonpath",
+			"print (sys.path)",
+			"print sys.path",
+			"import sys",
+			"print(sys.path)",
+			"import os",
+			"echo PYTHONPATH",
+			"echo $PYTHONPATH"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/peter/Able/kk.sublime-project",
+		"/home/peter/.config/sublime-text-3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/home/peter/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/peter/.config/sublime-text-3/Packages/User/HTML (Django).sublime-settings",
+		"/home/peter/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/peter/.config/sublime-text-3/Packages/AutoPEP8/AutoPep8.sublime-settings",
+		"/home/peter/.config/sublime-text-3/Packages/User/Python Django.sublime-settings",
+		"/home/peter/.config/sublime-text-3/Packages/SublimeGDB/SublimeGDB.sublime-settings",
+		"/home/peter/.config/sublime-text-3/Packages/User/SublimeGDB.sublime-settings",
+		"/home/peter/.config/sublime-text-3/Packages/User/SublimeLinter.sublime-settings",
+		"/home/peter/Able/src/gowan/urls.py",
+		"/home/peter/.config/sublime-text-3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/home/peter/Able/static/templates/admin/base_site.html",
+		"/home/peter/Able/src/gowan/admin.py",
+		"/home/peter/Able/src/kk/urls.py",
+		"/home/peter/Able/src/gowan/forms.py",
+		"/home/peter/Able/inlineFormsetFactory",
+		"/home/peter/Able/src/gowan/views.py",
+		"/home/peter/Able/static/templates/submit.html",
+		"/home/peter/Able/src/gowan/models.py",
+		"/home/peter/Able/static/templates/admin/base.html",
+		"/home/peter/Able/static/templates/second_templates/kk.html",
+		"/home/peter/Able/src/kk/settings.py",
+		"/home/peter/.config/sublime-text-3/Packages/User/Distraction Free.sublime-settings",
+		"/home/peter/.config/sublime-text-3/Packages/User/Package Control.sublime-settings",
+		"/home/peter/Able/glaze_tree",
+		"/home/peter/Able/static/templates/second_templates/year_archive.html",
+		"/home/peter/Able/static/templates/kk.html",
+		"/home/peter/Able/static/templates/bbase.html",
+		"/home/peter/.config/sublime-text-3/Packages/Python PEP8 Autoformat/pep8_autoformat.sublime-settings",
+		"/home/peter/AAcs_code/src6/process.php",
+		"/home/peter/Able/static/templates/django_style.html",
+		"/home/peter/AAcs_code/src7/ajax7.html",
+		"/home/peter/Able/static/templates/bs_grid.html",
+		"/home/peter/.bash_aliases",
+		"/home/peter/Able/src/gowan/through_fields_models.py",
+		"/home/peter/Able/src/gowan/a1dmin.py",
+		"/home/peter/Able/src/gowan/models.py~",
+		"/home/peter/Able/src/gowan/aaadmin.py",
+		"/home/peter/.virtualenvs/envkk/lib/python3.4/site-packages/django/db/models/fields/related.py",
+		"/home/peter/.config/sublime-text-3/Packages/Xdebug Client/Xdebug.sublime-settings",
+		"/home/peter/Able/src/gowan/admin",
+		"/home/peter/Able/src/gowan/m1odels.py",
+		"/home/peter/Able/src/gowan/mmodels.py",
+		"/home/peter/Able/src/gowan/mmmodels.py",
+		"/home/peter/Able/static/templates/#homex.html"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+			"/home/peter/Able",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"ExhibitionPiece",
+			"list_display",
+			"ExhibitionPiece",
+			"kk.",
+			"object has no attribute",
+			"through"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 40.0
+	},
+	"input":
+	{
+		"height": 42.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.autopep8":
+	{
+		"height": 144.0
+	},
+	"project": "kk.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"Able/src/kk/urls.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 227.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
